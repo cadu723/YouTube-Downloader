@@ -5,7 +5,7 @@ Um script simples e eficiente para baixar vídeos e áudios do YouTube . Desenvo
 ## 🚀 Funcionalidades
 - [x] Download de vídeos na melhor qualidade disponível.
 - [x] Fusão automática de vídeo e áudio.
-- [ ] Interface Gráfica (Em breve).
+- [x]  Interface Gráfica
 - [ ] Conversão direta para MP3 (Em breve).
 
 ## 🛠️ Pré-requisitos
