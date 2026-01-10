@@ -1,11 +1,19 @@
 import yt_dlp
-def funcao_baixar(link_do_video):
+import os
+def funcao_baixar(link_do_video,pasta_destino=""):
+
+    print(f"Baixando: {link_do_video} na pasta: {pasta_destino}")
+
+    if pasta_destino:
+        caminho_final = pasta_destino + "/%(title)s.%(ext)s" # Definindo o caminho final com a pasta escolhida
+    else:
+        caminho_final = "%(title)s.%(ext)s" # Definindo o caminho final na pasta do projeto
 
     regras_da_analise = {
         'quiet': False,           # ORDEM: "Fique em silêncio (não imprima bagunça no terminal)"
         'extract_flat': False,    # ORDEM: "Apenas extraia os dados (não baixe o vídeo pesado)"
         'format':'bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',#limitando a 720p e formatos mp4/m4a pois fica mais leve , embora perca levemente em qualidade 
-        'outtmpl': '%(title)s.%(ext)s', # Salva com o nome original do vídeo.
+        'outtmpl': caminho_final, # Salva com o nome original do vídeo.
     }
     print("\n  Iniciando a varredura no link...")
 
