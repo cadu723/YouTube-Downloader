@@ -39,7 +39,7 @@ FFmpeg (Essencial para fusão de áudio/vídeo)
 Clone o repositório:
 
 ```
-git clone [https://github.com/cadu723/YouTube-Downloader.git](https://github.com/cadu723/YouTube-Downloader.git)
+git clone https://github.com/cadu723/YouTube-Downloader.git
 cd YouTube-Downloader
 ```
 Crie um ambiente virtual (recomendado):
